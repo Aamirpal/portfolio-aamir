@@ -17,7 +17,7 @@ export default function Home() {
         <br />
         <h1 className={title()}>solutions with passion and precision.</h1>
         <h2 className={subtitle({ class: "mt-4" })}>
-          Let's build something amazing together.
+          {`Let's build something amazing together.`}
         </h2>
       </div>
 
