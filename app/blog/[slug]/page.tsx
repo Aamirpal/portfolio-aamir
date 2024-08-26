@@ -4,6 +4,14 @@ import matter from "gray-matter";
 import ReactMarkdown from "react-markdown";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { dracula } from "react-syntax-highlighter/dist/esm/styles/prism";
+import { HTMLAttributes } from "react";
+
+// Define the types for the `code` component's props
+interface CodeProps extends HTMLAttributes<HTMLElement> {
+  inline?: boolean;
+  className?: string;
+  children?: React.ReactNode;
+}
 
 export async function generateStaticParams() {
   const directoryPath = path.join(process.cwd(), "content");
@@ -14,7 +22,11 @@ export async function generateStaticParams() {
   }));
 }
 
-export default async function BlogPost({ params }) {
+export default async function BlogPost({
+  params,
+}: {
+  params: { slug: string };
+}) {
   const { slug } = params;
   const filePath = path.join(process.cwd(), "content", `${slug}.md`);
   const fileContent = fs.readFileSync(filePath, "utf-8");
@@ -34,14 +46,14 @@ export default async function BlogPost({ params }) {
           <div className="prose max-w-none">
             <ReactMarkdown
               components={{
-                p: ({ node, children }) => (
+                p: ({ children }) => (
                   <p className="mb-6">{children}</p> // Adding margin-bottom to paragraphs
                 ),
-                code({ node, inline, className, children, ...props }) {
+                code({ inline, className, children, ...props }: CodeProps) {
                   const match = /language-(\w+)/.exec(className || "");
                   return !inline && match ? (
                     <SyntaxHighlighter
-                      style={dracula}
+                      style={dracula as any} // Cast to 'any'
                       language={match[1]}
                       PreTag="div"
                       {...props}

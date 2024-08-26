@@ -10,7 +10,7 @@ import {
   Image,
 } from "@nextui-org/react";
 
-export default function BlogPageClient({ blogPosts }) {
+export default function BlogPageClient({ blogPosts }: { blogPosts: any[] }) {
   return (
     <div className="w-full flex flex-col items-center">
       <h1 className="text-3xl font-bold mb-8">Blogs</h1>
