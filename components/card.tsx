@@ -27,7 +27,7 @@ export default function App() {
       </CardHeader>
       <Divider />
       <CardBody>
-        <p>Make beautiful websites regardless of your design experience.</p>
+        <p>Makea beautiful websites regardless of your design experience.</p>
       </CardBody>
       <Divider />
       <CardFooter>

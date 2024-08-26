@@ -52,6 +52,6 @@ export const siteConfig = {
     twitter: "https://twitter.com/aamirpalsehmi",
     docs: "https://nextui.org",
     discord: "https://discord.gg/",
-    sponsor: "https://patreon.com/jrgarciadev",
+    linkedin: "https://www.linkedin.com/in/aamirpal/",
   },
 };
