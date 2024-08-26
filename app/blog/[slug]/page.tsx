@@ -35,20 +35,20 @@ export default async function BlogPost({
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-center">
-      <header className="w-full max-w-4xl mx-auto p-6 flex justify-center">
+      <header className="w-full max-w-4xl mx-auto p-4 md:p-6 flex justify-center">
         <div className="flex space-x-4">
-          <span className="text-8xl font-bold">{data.title}</span>
+          <span className="text-3xl sm:text-4xl md:text-6xl lg:text-8xl font-bold">
+            {data.title}
+          </span>
         </div>
       </header>
 
       <main className="w-full bg-white text-black">
-        <div className="max-w-4xl mx-auto p-6">
+        <div className="max-w-4xl mx-auto p-4 md:p-6">
           <div className="prose max-w-none">
             <ReactMarkdown
               components={{
-                p: ({ children }) => (
-                  <p className="mb-6">{children}</p> // Adding margin-bottom to paragraphs
-                ),
+                p: ({ children }) => <p className="mb-6">{children}</p>,
                 code({ inline, className, children, ...props }: CodeProps) {
                   const match = /language-(\w+)/.exec(className || "");
                   return !inline && match ? (
