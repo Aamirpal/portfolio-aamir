@@ -1,0 +1,39 @@
+{
+    "blogPosts": [
+        {
+            "slug": "introduction-to-software-development",
+            "title": "Introduction to Software Development",
+            "author": "John Doe",
+            "date": "2022-01-01",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nunc id aliquet ultricies, urna nunc tincidunt urna, ac lacinia nisl nunc id mauris. Nullam auctor, nunc id aliquet ultricies, urna nunc tincidunt urna, ac lacinia nisl nunc id mauris. Nullam auctor, nunc id aliquet ultricies, urna nunc tincidunt urna, ac lacinia nisl nunc id mauris. Nullam auctor, nunc id aliquet ultricies, urna nunc tincidunt urna, ac lacinia nisl nunc id mauris. Nullam auctor, nunc id aliquet ultricies, urna nunc tincidunt urna, ac lacinia nisl nunc id mauris."
+        },
+        {
+            "slug": "best-practices-for-code-review",
+            "title": "Best Practices for Code Review",
+            "author": "Jane Smith",
+            "date": "2022-02-15",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nunc id aliquet ultricies, urna nunc tincidunt urna, ac lacinia nisl nunc id mauris."
+        },
+        {
+            "slug": "building-scalable-web-applications",
+            "title": "Building Scalable Web Applications",
+            "author": "Alex Johnson",
+            "date": "2022-03-10",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nunc id aliquet ultricies, urna nunc tincidunt urna, ac lacinia nisl nunc id mauris."
+        },
+        {
+            "slug": "introduction-to-react",
+            "title": "Introduction to React",
+            "author": "Sarah Brown",
+            "date": "2022-04-20",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nunc id aliquet ultricies, urna nunc tincidunt urna, ac lacinia nisl nunc id mauris."
+        },
+        {
+            "slug": "getting-started-with-nextjs",
+            "title": "Getting Started with Next.js",
+            "author": "Michael Wilson",
+            "date": "2022-05-30",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nunc id aliquet ultricies, urna nunc tincidunt urna, ac lacinia nisl nunc id mauris."
+        }
+    ]
+}
