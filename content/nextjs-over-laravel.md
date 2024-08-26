@@ -1,6 +1,6 @@
 ---
 title: "Why Next.js Over Laravel and Both Use Cases"
-date: "2024-08-25"
+date: "2024-06-11"
 description: "Exploring why Next.js might be a better choice over Laravel depending on the project requirements and use cases."
 ---
 
