@@ -13,7 +13,7 @@ import {
 export default function BlogPageClient({ blogPosts }: { blogPosts: any[] }) {
   return (
     <div className="w-full flex flex-col items-center">
-      <h1 className="text-3xl font-bold mb-8">Blogs</h1>
+      <h1 className="text-3xl font-bold mb-8">Posts</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {blogPosts.map((post, index) => (
           <Link
