@@ -2,6 +2,13 @@
 
 import { useEffect } from "react";
 
+// Extend the window interface
+declare global {
+  interface Window {
+    dataLayer: any[];
+  }
+}
+
 export const GoogleAnalytics = () => {
   useEffect(() => {
     // Function to initialize Google Analytics
@@ -21,7 +28,7 @@ export const GoogleAnalytics = () => {
     document.head.appendChild(script);
 
     handleGTag();
-  }, []); // Empty dependency array ensures this runs only once when the component is mounted
+  }, []);
 
-  return null; // This component doesn't need to render anything
+  return null; // No UI to render
 };
